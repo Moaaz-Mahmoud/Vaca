@@ -18,7 +18,7 @@ public class OmboudouActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/maps/AHn3QSL1Yb869YGw7"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://goo.gl/maps/Jo2T8jrnzJrGRzoX6"));
                 startActivity(intent);
             }
         });

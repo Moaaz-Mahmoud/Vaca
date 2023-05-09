@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
         ListView placesListView = findViewById(R.id.placesListView);
         placeList.add(new Place("Omboudou's Home" , R.drawable.omboudou_home));
-        placeList.add(new Place("Ambele's Home" , R.drawable.ambele_home));
-        placeList.add(new Place("Faculty of Engineering" , R.drawable.faculty_engineering));
+//        placeList.add(new Place("Ambele's Home" , R.drawable.ambele_home));
+        placeList.add(new Place("Faculty of Engineering" , R.drawable.faculty_eng));
         placeList.add(new Place("Staff's Housing" , R.drawable.esteraha));
 
         PlacesAdapter adapter = new PlacesAdapter(this,R.layout.place_icon, placeList);
@@ -35,16 +35,16 @@ public class MainActivity extends AppCompatActivity {
                     Intent choice = new Intent(MainActivity.this, OmboudouActivity.class);
                     startActivity(choice);
                 }
+                else if (placeIndex == 10){
+//                    Intent choice = new Intent(MainActivity.this, AmbeleActivity.class);
+//                    startActivity(choice);
+                }
                 else if (placeIndex == 1){
-                    Intent choice = new Intent(MainActivity.this, AmbeleActivity.class);
+                    Intent choice = new Intent(MainActivity.this, FacultyEngActivity.class);
                     startActivity(choice);
                 }
                 else if (placeIndex == 2){
-                    Intent choice = new Intent(MainActivity.this,SimbelActivity.class);
-                    startActivity(choice);
-                }
-                else if (placeIndex == 3){
-                    Intent choice = new Intent(MainActivity.this,PhilaeActivity.class);
+                    Intent choice = new Intent(MainActivity.this, EsterahaActivity.class);
                     startActivity(choice);
                 }
             }
